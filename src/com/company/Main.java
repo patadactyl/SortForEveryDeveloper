@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         while(true) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter a new string of alphabetical characters (ctrl+D to exit): ");
+            System.out.println("Enter a new string of alphabetical characters: ");
             String userInputString = scanner.nextLine();
             System.out.println("String sorted in alphabetical order: ");
             alphabeticalSort(userInputString);

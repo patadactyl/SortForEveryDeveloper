@@ -16,14 +16,16 @@ public class Main {
     }
 
     public static void alphabeticalSort(String userInput) {
-        Character[] charArray = new Character[userInput.length()];
-        for (int i = 0; i < userInput.length(); i++) {
-            charArray[i] = userInput.charAt(i);
+        int length = userInput.length();
+        Character[] characterArray = new Character[length];
+        for (int i = 0; i < length; i++) {
+            characterArray[i] = userInput.charAt(i);
         }
-        Arrays.sort(charArray, Comparator.comparingInt(Character::toLowerCase));
-        StringBuilder stringBuilder = new StringBuilder(charArray.length);
-        for (Character character : charArray)
+        Arrays.sort(characterArray, Comparator.comparingInt(Character::toLowerCase));
+        StringBuilder stringBuilder = new StringBuilder(length);
+        for (Character character : characterArray)
             stringBuilder.append(character.charValue());
+
         System.out.println("String sorted in ascending alphabetical order: ");
         System.out.println(stringBuilder.toString());
         System.out.println("String sorted in descending alphabetical order: ");

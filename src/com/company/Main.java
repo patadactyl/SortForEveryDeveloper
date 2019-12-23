@@ -23,9 +23,9 @@ public class Main {
         }
         Arrays.sort(characterArray, Comparator.comparingInt(Character::toLowerCase));
         StringBuilder stringBuilder = new StringBuilder(length);
-        for (Character character : characterArray)
+        for (Character character : characterArray) {
             stringBuilder.append(character.charValue());
-
+        }
         System.out.println("String sorted in ascending alphabetical order: ");
         System.out.println(stringBuilder.toString());
         System.out.println("String sorted in descending alphabetical order: ");
